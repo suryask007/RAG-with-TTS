@@ -1,4 +1,4 @@
-**# AI-Powered Q&A with File Upload**
+## ** AI-Powered Q&A with File Upload**
 
 This is a **Streamlit-based web application** that allows users to **upload PDF files, ask questions based on the content, and receive both text and audio answers** using a **FastAPI backend**.
 
