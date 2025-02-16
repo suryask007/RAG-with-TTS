@@ -1,70 +1,90 @@
-AI-Powered Q&A with File Upload
+**# AI-Powered Q&A with File Upload**
 
-This is a Streamlit-based web application that allows users to upload PDF files, ask questions based on the content, and receive both text and audio answers using a FastAPI backend.
+This is a **Streamlit-based web application** that allows users to **upload PDF files, ask questions based on the content, and receive both text and audio answers** using a **FastAPI backend**.
 
-Features
+---
 
-Upload PDF Files: Users can upload multiple PDFs for processing.
+## **🚀 Features**
 
-File Processing via FastAPI: The backend extracts information from PDFs.
+✅ **Upload PDF Files** – Users can upload multiple PDFs for processing.
 
-AI-Powered Q&A: Users can ask questions based on the uploaded PDFs, and the system returns answers.
+✅ **File Processing via FastAPI** – The backend extracts information from PDFs.
 
-Text-to-Speech (TTS) Support: Converts the answer into audio format for playback.
+✅ **AI-Powered Q&A** – Users can ask questions based on the uploaded PDFs, and the system returns answers.
 
-Prerequisites
+✅ **Text-to-Speech (TTS) Support** – Converts the answer into audio format for playback.
+
+---
+
+## **🔧 Prerequisites**
 
 Ensure you have the following installed:
 
-Python 3.8+
+- **Python 3.8+**
+- **pip** (Python package manager)
 
-pip (Python package manager)
+---
 
-Installation
+## **📥 Installation**
 
 Clone the repository:
 
+```bash
 git clone https://github.com/suryask007/RAG-with-TTS.git
 cd RAG-with-TTS
+```
 
 Install the required dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
-Running the Application
+---
 
-Run the root.py script, which starts both FastAPI and Streamlit:
+## **▶️ Running the Application**
 
+Run the `root.py` script, which starts both **FastAPI and Streamlit**:
+
+```bash
 python root.py
+```
 
-Usage
+---
 
-Upload PDFs: Click on the upload button and select PDF files.
+## **🛠️ Usage**
 
-Process Files: The app sends the files to FastAPI for processing.
+1️⃣ **Upload PDFs** – Click on the upload button and select PDF files.
 
-Ask a Question: Enter a question related to the uploaded files.
+2️⃣ **Process Files** – The app sends the files to FastAPI for processing.
 
-Get Text Answer: The model will return an answer based on the PDFs.
+3️⃣ **Ask a Question** – Enter a question related to the uploaded files.
 
-Generate Audio Answer: Click on "Get Audio Answer" to listen to the response.
+4️⃣ **Get Text Answer** – The model will return an answer based on the PDFs.
 
-API Endpoints
+5️⃣ **Generate Audio Answer** – Click on "Get Audio Answer" to listen to the response.
 
-POST /file_upload → Uploads and processes PDFs.
+---
 
-POST /model → Takes a question and returns an answer.
+## **🔗 API Endpoints**
 
-GET /audio → Converts the text answer to an audio response.
+- **`POST /file_upload`** → Uploads and processes PDFs.
+- **`POST /model`** → Takes a question and returns an answer.
+- **`GET /audio`** → Converts the text answer to an audio response.
 
-Troubleshooting
+---
 
-App restarts on button clicks: This is due to Streamlit's rerun behavior. The app uses st.session_state to prevent reprocessing on every button click.
+## **⚠️ Troubleshooting**
 
-FastAPI Not Running: Ensure FastAPI is running before launching Streamlit.
+⚡ **App restarts on button clicks** – This is due to Streamlit's rerun behavior. The app uses `st.session_state` to prevent reprocessing on every button click.
 
-Audio Not Playing: If pydub fails, download the file manually from the UI.
+⚡ **FastAPI Not Running** – Ensure FastAPI is running before launching Streamlit.
 
+⚡ **Audio Not Playing** – If `pydub` fails, download the file manually from the UI.
 
+---
 
-Contributors: Surya K (surya.tvm.apm@gmail.com)
+## **👨‍💻 Contributors**
+
+- **Surya K** (surya.tvm.apm@gmail.com)
+
